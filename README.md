@@ -149,6 +149,7 @@ vela-server/
 | [docs/server-build-plan-consolidated.md](./docs/server-build-plan-consolidated.md) | Consolidated task reference                |
 | [docs/release-checklist.md](./docs/release-checklist.md)                           | Testnet release and Wave evidence gates    |
 | [docs/drips-appeal-summary.md](./docs/drips-appeal-summary.md)                     | Substantive-change summary for Wave appeal |
+| [SECURITY.md](./SECURITY.md)                                                       | Vulnerability reporting and disclosure     |
 
 ## Supported assets (MVP)
 
@@ -172,6 +173,7 @@ See `.env.example` for the full list with placeholder values.
 
 ## Security notes
 
+- Report vulnerabilities privately as described in the [security policy](SECURITY.md); do not open public issues for them.
 - Never commit `.env` or real secrets to the repository.
 - Do not log JWTs, service role keys, or raw WebAuthn challenges.
 - Hybrid auth model: Supabase session for API access + WebAuthn for payment approval.
